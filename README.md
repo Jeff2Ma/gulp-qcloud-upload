@@ -1,5 +1,8 @@
 # gulp-qcloud-upload
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Jeff2Ma/gulp-qcloud-upload.svg)](https://greenkeeper.io/)
+[![npm version](https://badge.fury.io/js/gulp-qcloud-upload.svg)](https://www.npmjs.com/package/gulp-qcloud-upload)
+
 > Qcloud COS upload plugin for gulpjs. 腾讯云COS 上传插件
 > 
 > 适合于腾讯云最新的[COSV4](https://console.qcloud.com/cos4)（云对象存储v4）版本，基于官方Node.js SDK 进行开发。
@@ -35,7 +38,7 @@ gulp.task('default', function () {
 
 ## 选项
 
-### appid、secretId、secretKey
+### appid, secretId, secretKey
 
 以上前往 [https://console.qcloud.com/capi](https://console.qcloud.com/capi) 获取APPID 与密钥信息。
 
