@@ -1,0 +1,38 @@
+{
+  "name": "gulp-qcloud-upload",
+  "version": "1.0.0",
+  "description": "Qcloud COS upload plugin for gulpjs.",
+  "main": "index.js",
+  "dependencies": {
+    "async": "^2.2.0",
+    "eventproxy": "^0.3.5",
+    "gulp-util": "^3.0.8",
+    "lodash.merge": "^4.6.0",
+    "moment": "^2.18.1",
+    "q": "^1.5.0",
+    "request": "^2.81.0",
+    "through2": "^2.0.3",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jeff2Ma/gulp-qcloud-upload.git"
+  },
+  "keywords": [
+    "gulpjs",
+    "upload",
+    "cdn"
+  ],
+  "author": "Jeff2Ma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Jeff2Ma/gulp-qcloud-upload/issues"
+  },
+  "homepage": "https://github.com/Jeff2Ma/gulp-qcloud-upload#readme"
+}
