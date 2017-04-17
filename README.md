@@ -1,6 +1,5 @@
 # gulp-qcloud-upload
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/Jeff2Ma/gulp-qcloud-upload.svg)](https://greenkeeper.io/)
 [![npm version](https://badge.fury.io/js/gulp-qcloud-upload.svg)](https://www.npmjs.com/package/gulp-qcloud-upload)
 
 > Qcloud COS upload plugin for gulpjs. 腾讯云COS 上传插件
