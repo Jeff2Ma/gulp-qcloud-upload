@@ -5,9 +5,7 @@ var log = require('gulp-util').log;
 var through2 = require('through2');
 var Q = require('q');
 var merge = require('lodash.merge');
-
-// 待加入
-var qos = require('./qos-node-client/dist/index').default;
+var qos = require('qos-node-client').default;
 
 module.exports = function (option) {
 	option = option || {};
@@ -92,7 +90,7 @@ module.exports = function (option) {
 						// console.log('上传成功', res);
 						log('Uploading:', colors.green(fileRelative), '→', colors.yellow(fileKey));
 						// 上传成功
-						setHeader(fileID);
+						if(option.headers){setHeader(fileID)};
 						defer.resolve();
 					}).catch(function (err) {
 						log('Error →', colors.red(fileKey), err.error.Message);
