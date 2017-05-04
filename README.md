@@ -33,7 +33,7 @@ gulp.task('default', function () {
 ```
 ## 效果
 
-![效果](./test/example.png)
+![效果](test/example2.png)
 
 ## 选项
 
