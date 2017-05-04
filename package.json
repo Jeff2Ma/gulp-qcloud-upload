@@ -28,8 +28,10 @@
     "gulpjs",
     "upload",
     "qcloud",
+    "腾讯云",
     "cos",
     "tencent",
+    "cloud",
     "cdn"
   ],
   "author": "Jeff2Ma",

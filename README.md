@@ -4,7 +4,7 @@
 
 > Qcloud COS upload plugin for gulpjs. 腾讯云COS 上传插件
 > 
-> 适合于腾讯云最新的[COSV4](https://console.qcloud.com/cos4)（云对象存储v4）版本，基于官方Node.js SDK 进行开发。
+> 适合于腾讯云最新的[COSV4](https://console.qcloud.com/cos4)（云对象存储v4）版本，基于官方Node.js SDK 进行开发。可完美配合腾讯云CDN 使用。
 
 ## 安装
 
