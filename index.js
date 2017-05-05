@@ -93,7 +93,7 @@ module.exports = function (option) {
 						if(option.headers){setHeader(fileID)};
 						defer.resolve();
 					}).catch(function (err) {
-						log('Error →', colors.red(fileKey), err.error.Message);
+						log('Error →', colors.red(fileKey), err.statusMessage);
 						uploadedFail++;
 						defer.reject();
 					});
@@ -110,7 +110,7 @@ module.exports = function (option) {
 					'Success:', colors.green(uploadedFiles - uploadedFail),
 					'Failed:', colors.red(uploadedFail));
 			}, function (err) {
-				log('Failed upload files:', err.message);
+				log('Failed upload files:', err);
 			});
 	});
 };

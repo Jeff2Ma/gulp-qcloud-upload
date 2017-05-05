@@ -2,9 +2,9 @@
 
 [![npm version](https://badge.fury.io/js/gulp-qcloud-upload.svg)](https://www.npmjs.com/package/gulp-qcloud-upload)
 
-> Qcloud COS upload plugin for gulpjs. 腾讯云COS 上传插件
+> Qcloud COS upload plugin for Gulpjs. 腾讯云COS 上传插件.
 > 
-> 适合于腾讯云最新的[COSV4](https://console.qcloud.com/cos4)（云对象存储v4）版本，基于官方Node.js SDK 进行开发。可完美配合腾讯云CDN 使用。
+> 适合于腾讯云最新的[COSV4](https://console.qcloud.com/cos4)（云对象存储v4）版本，基于官方JSON API进行开发，可完美配合腾讯云CDN 使用。
 
 ## 安装
 
@@ -63,6 +63,6 @@ Bucket 所属地区。国内目前有华南、华东、华北区可选，对应�
 
 ## 链接
 
-本插件基于[gulp-qcloud](https://www.npmjs.com/package/gulp-qcloud) 改进，修复其在COSV4 上不能使用的问题。
+第三方Node.js SDK: [qos-node-client](https://github.com/Youmoo/qos-node-client)
 
 腾讯云官方文档：[https://www.qcloud.com/document/product/436/8629](https://www.qcloud.com/document/product/436/8629)
