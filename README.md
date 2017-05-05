@@ -25,9 +25,12 @@ gulp.task('default', function () {
             secretId: 'your secretId',
             secretKey: 'your secretKey',
             bucket: 'bucket-name',
-            region: 'cn-east',
+            region: 'sh',
             prefix: 'my-diy-prefix',
-            overWrite: false
+            overWrite: false,
+            headers: {
+				'Cache-Control': 'max-age=5184000'
+			  }
         }));
 });
 ```
@@ -51,7 +54,7 @@ Bucket 所属地区。国内目前有华南、华东、华北区可选，对应�
 
 ### prefix
 
-自定义COS 中的文件前缀，输入的字符串不包括文件名部分。必填。[详情](https://www.qcloud.com/document/product/436/6237 )
+自定义COS 中的文件前缀，输入的字符串不包括文件名部分。如本地文件为`demo.png`，设置`prefix: 'my-diy-prefix'`，上传到COS 后的路径则为`my-diy-prefix/demo.png`；设置`prefix: 'my-diy-prefix/second'`，上传到COS 后的路径则为`my-diy-prefix/seconde/demo.png` 。选填。[详情](https://www.qcloud.com/document/product/436/6237 )
 
 ### overWrite
 
