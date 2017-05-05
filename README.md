@@ -33,29 +33,33 @@ gulp.task('default', function () {
 ```
 ## 效果
 
-![效果](./test/example.png)
+![效果](test/example.png)
 
 ## 选项
 
 ### appid, secretId, secretKey
 
-以上前往 [https://console.qcloud.com/capi](https://console.qcloud.com/capi) 获取APPID 与密钥信息。
+以上前往 [https://console.qcloud.com/capi](https://console.qcloud.com/capi) 获取APPID 与密钥信息。必填。
 
 ### bucket
 
-Bucket 名称。
+Bucket 名称。必填。
 
 ### region
 
-Bucket 所属地区。国内目前有华南、华东、华北区可选，对应值为：`cn-south`,`cn-east`,`cn-north`
+Bucket 所属地区。国内目前有华南、华东、华北区可选，对应值为：`gz`,`sh`,`tj`。必填。
 
 ### prefix
 
-自定义COS 中的文件前缀，输入的字符串不包括文件名部分。[详情](https://www.qcloud.com/document/product/436/6237 )
+自定义COS 中的文件前缀，输入的字符串不包括文件名部分。必填。[详情](https://www.qcloud.com/document/product/436/6237 )
 
 ### overWrite
 
-若COS 中已经有同名文件，是否覆盖。默认`false`。
+若COS 中已经有同名文件，是否覆盖。非必填，默认`false`。
+
+### headers
+
+为文件自定义http header 相关属性。非必填，默认无。
 
 ## 链接
 
