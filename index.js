@@ -102,7 +102,7 @@ module.exports = function (option) {
 		};
 		tasks.push(handler());
 		next();
-	}, function () {
+	}, function (callback) {
 		Q.allSettled(tasks)
 			.then(function (fulfilled) {
 				log('Total:', colors.green(fulfilled.length),
@@ -111,6 +111,9 @@ module.exports = function (option) {
 					'Failed:', colors.red(uploadedFail));
 			}, function (err) {
 				log('Failed upload files:', err);
+			})
+			.then(function () {
+				return callback(null);
 			});
 	});
 };
