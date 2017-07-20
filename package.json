@@ -1,6 +1,6 @@
 {
   "name": "gulp-qcloud-upload",
-  "version": "2.1.1",
+  "version": "2.2.0",
   "description": "Qcloud COS upload plugin for gulpjs.",
   "main": "index.js",
   "dependencies": {
